@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Portfolio</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
 
-<!-- Header -->
+<!-- NAVBAR -->
+<nav>
+    <h2>MyPortfolio</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
 <header>
+    <img src="profile.jpg" alt="Profile Image">
     <h1>Snehal Patil</h1>
-    <p>Python System Developer | SQL | AI | ML | Data Management | Data</p>
+    <p>Python System Developer | SQL | AI | ML | Data Management</p>
+    
+    <a href="https://www.linkedin.com/in/snehal-patil97/" target="_blank" class="btn">
+        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+    </a>
 </header>
 
-<!-- Bio Section -->
-<section>
+<!-- ABOUT -->
+<section id="about">
     <h2>About Me</h2>
-    <p>Result driven Data Management Engineer with 4+ years of experience maintaining 
+     <p>Result driven Data Management Engineer with 4+ years of experience maintaining 
         & optimizing data systems that support business intelligence, analytics and 
         decision making. Skilled in data modeling, ETL pipelines and Master Data Management 
         with expertise in tools such as SQL, Tidal, Power BI, Python and cloud platforms.
     </p>
 </section>
 
-<!-- Skills Section -->
-<section>
+<!-- SKILLS -->
+<section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Python,</li>
-        <li>Artificial Intelligence</li>
-        <li>Machine Learning</li>
-        <li>SQL</li>
-        <li>Django</li>
-    </ul>
+    <div class="skills">
+        <span>Python</span>
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+        <span>SQL</span>
+        <span>Django</span>
+    </div>
 </section>
 
- <!-- Project Section -->
-<section>
+<!-- PROJECT -->
+<section id="project">
     <h2>Project</h2>
-    <h3>Titanic_Capstone_Project</h3>
-    <p>
-        This project is a full-stack machine learning application based on the Titanic dataset.
+
+    <div class="card">
+        <h3>Titanic Capstone Project</h3>
+        <p>
+            This project is a full-stack machine learning application based on the Titanic dataset.
         The goal is to predict whether a passenger survived the Titanic disaster based on 
         passenger information.
         The project covers the complete machine learning workflow:
@@ -54,11 +82,19 @@
         integrated into a full-stack web application. The focus is not only on model 
         performance, but also on data processing, system design, and presenting predictions
          through a user-friendly interface.
-    </p>
+        </p>
+    </div>
+
 </section>
-<!-- Footer -->
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+</section>
+
 <footer>
-    <p>© 2026 Your Name</p>
+    <p>© 2026 Snehal</p>
 </footer>
 
 </body>
